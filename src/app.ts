@@ -12,8 +12,14 @@ import { logger, stream } from '@utils/logger'
 import compression from 'compression'
 import cookieParser from 'cookie-parser'
 
+// ** Controller Imports
+import { CommonController } from '@controllers/common.controller'
+
+const controllers = [CommonController]
+
 const expressApp: Application = createExpressServer({
   controllers: [],
+  controllers: controllers,
   middlewares: [
     morgan(LOG_FORMAT, { stream }),
     cors({ origin: '*', credentials: true }),
