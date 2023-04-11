@@ -21,19 +21,19 @@
     "importHelpers": true,
     "baseUrl": "src",
     "paths": {
-      "@/*": ["*"],
-      "@config": ["config"],
-      "@controllers/*": ["controllers/*"],
-      "@databases": ["databases"],
-      "@dtos/*": ["dtos/*"],
-      "@exceptions/*": ["exceptions/*"],
-      "@interfaces/*": ["interfaces/*"],
-      "@middlewares/*": ["middlewares/*"],
-      "@models/*": ["models/*"],
-      "@routes/*": ["routes/*"],
-      "@services/*": ["services/*"],
-      "@utils/*": ["utils/*"],
-      "@filters/*": ["filters/*"]
+      "@/*": ["*"]
+      // "@config": ["config"],
+      // "@controllers/*": ["controllers/*"],
+      // "@databases": ["databases"],
+      // "@dtos/*": ["dtos/*"],
+      // "@exceptions/*": ["exceptions/*"],
+      // "@interfaces/*": ["interfaces/*"],
+      // "@middlewares/*": ["middlewares/*"],
+      // "@models/*": ["models/*"],
+      // "@routes/*": ["routes/*"],
+      // "@services/*": ["services/*"],
+      // "@utils/*": ["utils/*"],
+      // "@filters/*": ["filters/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.json", ".env"],
