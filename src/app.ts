@@ -11,6 +11,7 @@ import { NODE_ENV, PORT, LOG_FORMAT } from '@config'
 import { logger, stream } from '@utils/logger'
 import compression from 'compression'
 import cookieParser from 'cookie-parser'
+import { connectDatabase } from '@databases'
 
 // ** Controller Imports
 import CommonController from '@controllers/common.controller'
@@ -29,6 +30,10 @@ const expressApp: Application = createExpressServer({
     express.urlencoded({ extended: true }),
     cookieParser(),
   ],
+})
+
+connectDatabase().catch((err) => {
+  logger.error('Connect database error: ' + err)
 })
 
 const port = PORT ? +PORT : 3000
