@@ -13,7 +13,7 @@ import compression from 'compression'
 import cookieParser from 'cookie-parser'
 
 // ** Controller Imports
-import { CommonController } from '@controllers/common.controller'
+import CommonController from '@controllers/common.controller'
 
 const controllers = [CommonController]
 
