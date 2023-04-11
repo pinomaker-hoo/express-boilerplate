@@ -18,7 +18,7 @@ import { CommonController } from '@controllers/common.controller'
 const controllers = [CommonController]
 
 const expressApp: Application = createExpressServer({
-  controllers: [],
+  routePrefix: '/api',
   controllers: controllers,
   middlewares: [
     morgan(LOG_FORMAT, { stream }),
