@@ -5,3 +5,5 @@ dist/
 # Log files
 *.log
 logs/
+
+*.env
